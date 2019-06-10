@@ -3,8 +3,8 @@
 
 # Hospedeiro
 - Ubuntu 18.04
-- Ansible
-- Acesso a internet (acesso ao repositório da dist, Git Hub e Docker)
+- Ansible instalado e configurado
+- Acesso a internet (acesso aos repositórios necessários da distribuição, Git Hub e Docker)
 
 
 # Descrição das atividades
