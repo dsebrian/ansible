@@ -15,13 +15,14 @@ Esse Playbook main.yaml executa:
 - Executa o container
 - Valida se o container está ativo
 
-#comando para execução do playbook
+#comando para execução do playbook:
 sudo ansible-playbook --connection=local -i IP_do_Docker, main.yml -v
 
 #Container
 A imagem gerada é baseada na goolang e está expondo a porta 8080, acessível em HTTPS.
 Essa imagem já acessa ao Git Hub, trazendo e disponibilizando ao container os arquivos necessários para sua configuração e execução.
 Para acesso do host, https://ipdocontainer:8080
+
 
 
 
