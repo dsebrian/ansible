@@ -13,11 +13,11 @@ sudo apt-get install git
 - Acesso a internet (acesso aos repositórios necessários da distribuição, Git Hub e Docker)
 - Criar pasta para utilizar no teste
 ```
-mkdir $HOME/pasta
+mkdir $HOME/nomedapasta
 ```
 - Clone desse repositório do Git
 ```
-git clone https://github.com/dsebrian/ansible.git /pasta/escolhida
+git clone https://github.com/dsebrian/ansible.git $HOME/nomedapasta
 ```
 
 # Descrição das atividades
