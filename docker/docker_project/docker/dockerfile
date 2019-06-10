@@ -1,6 +1,6 @@
 #Version: 3.1
 FROM golang:latest
-LABEL Diego_teste 
+LABEL Diego_teste Diego
 
 #executa o update das fontes de repositório
 RUN apt-get update
