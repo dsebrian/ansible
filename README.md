@@ -46,7 +46,7 @@ Essa imagem já acessa ao Git Hub, trazendo e disponibilizando ao container os a
 URL para acesso do host: https://ipdocontainer:8080 - pode ser acessada via browser ou via terminal (utilizando curl https://ipdocontainer:8080 por exemplo)
 Se o container for o único e não houver alteração nas configurações de rede, o IP padrão do container será 172.17.0.2.
 
-Dentro do container sempre é executada a aplicação compilada main.go, que chamei o aplicativo de mainexec.
+Dentro do container é executada automaticamente a aplicação compilada main.go, que chamei o aplicativo de mainexec, sem a necessidade de acesso interativo ao container.
 
 
 
