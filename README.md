@@ -31,11 +31,12 @@ Esse Playbook main.yaml executa:
 - Valida se o container está ativo
 
 # Comando para execução do playbook:
+- Se o Docker estiver na mesmo host do Ansible
 ```
-- Se o Docker estiver na mesmo host do Ansible <br>
 sudo ansible-playbook --connection=local -i IP_do_Docker, main.yml -v
-
-- Se o Docker estiver em outro host do Ansible <br>
+```
+- Se o Docker estiver em outro host do Ansible
+```
 sudo ansible-playbook -i IP_do_Docker, main.yml -v
 ```
 
