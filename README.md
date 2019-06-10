@@ -19,10 +19,10 @@ Esse Playbook main.yaml executa:
 
 # Comando para execução do playbook:
 ...
-- Se o Docker estiver na mesmo host do Ansible
+- Se o Docker estiver na mesmo host do Ansible \n
 sudo ansible-playbook --connection=local -i IP_do_Docker, main.yml -v
 
-- Se o Docker estiver em outro host do Ansible
+- Se o Docker estiver em outro host do Ansible \n
 sudo ansible-playbook -i IP_do_Docker, main.yml -v
 ...
 
