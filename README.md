@@ -40,15 +40,15 @@ Esse Playbook main.yaml executa:
 - Valida se o container está ativo
 
 # Comando para execução do playbook:
-- Se o Docker estiver na mesmo host do Ansible
+- Se o Docker estiver na mesmo host do Ansible, a interface local do docker terá o IP 172.17.0.1
 ```
 cd $HOME/nomedapasta/docker/docker_project
-sudo ansible-playbook --connection=local -i IP_do_Docker, main.yml -v
+sudo ansible-playbook --connection=local -i 172.17.0.1, main.yml -v
 ```
 - Se o Docker estiver em host diferente do Ansible
 ```
 cd $HOME/nomedapasta/docker/docker_project
-sudo ansible-playbook -i IP_do_Docker, main.yml -v
+sudo ansible-playbook -i IP_do_Servidor_Docker, main.yml -v
 ```
 
 # Container
