@@ -25,7 +25,7 @@ git clone https://github.com/dsebrian/ansible.git $HOME/nomedapasta
 No hospedeiro, executar o clone desse repositório do Git e executar apenas o playbook main.yml (comando para execução abaixo).
 Esse Playbook main.yaml executa:
 - Instalação do PIP e suas dependências
-- Instalação do Docker e suas dependências (em caso de servidor diferente do Ansible)
+- Instalação do Docker e suas dependências
 - Instalação do Docker Compose e suas dependências
 - Gera uma imagem do Docker a partir de um dockerfile
 - Executa o container
