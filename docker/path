@@ -1,0 +1,4 @@
+# Caminhos para o go encontrar e executar a aplicação, adicionado no ~/.profile na criação da imagem pelo Dockerfile
+export GOPATH="/app/main"
+export GOBIN="/app/main"
+

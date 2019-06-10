@@ -1,0 +1,32 @@
+---
+#configura o host e o método de autenticação
+- hosts: 172.17.0.1
+  remote_user: root
+  become: yes
+  become_method: sudo
+  tasks:
+        #Instalação do PIP - Instalador
+        - name: Install pip
+          apt: name=python-pip state=present
+          
+        #Instalação Docker-Compose  
+        - name: Install docker-compose
+          shell: pip install -U docker-compose
+      
+      #Construir imagem do Docker através de um Dockerfile
+        - name: Build Docker image from Dockerfile
+          docker_image:
+            name: go_run
+            path: docker
+            state: present
+        
+        #Iniciar o Container com a imagem criada anteriormente
+        - name: Running the container
+          docker_container:
+            image: go_run:latest
+            name: teste
+            state: started
+            
+        #Validação se o container está rodando    
+        - name: Check if container is running
+          shell: docker ps

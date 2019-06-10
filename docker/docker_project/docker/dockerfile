@@ -1,0 +1,23 @@
+#Version: 3.1
+FROM golang:latest
+LABEL Diego_teste 
+
+#executa o update das fontes de repositório
+RUN apt-get update
+# Instalação Git
+RUN apt-get install -y git
+#Criação do diretório /app na raiz
+RUN mkdir /app
+# Faz o clone do repositório do Git
+RUN git clone https://github.com/dsebrian/ansible.git /app
+#Altera permissão do aplicativo mainexec, que é o main.go compilado
+RUN chmod 777 /app/main/mainexec
+#altera local de trabalho do bash
+WORKDIR /app/main
+# Captura do arquivo Path os caminhos para o go e adiciona no ~/.profile
+RUN cat /app/docker/path >> ~/.profile
+# Executa o aplicativo mainexec na inicialização
+CMD ["./mainexec"]
+
+# Abre a porta 8080
+EXPOSE 8080
