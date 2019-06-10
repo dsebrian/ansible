@@ -1,11 +1,24 @@
 <h2> README para execução do exercício de publicação de aplicação go em um Container Docker </h2>
 
-# Hospedeiro utilizado
-- Ubuntu 18.04
-- Ansible instalado (apt-get install ansible)
-- Git instalado (apt-get install git)
+# Hospedeiro
+- Ubuntu 18.04 (utilizado para montagem do teste)
+- Ansible instalado:
+```
+sudo apt-get install ansible
+```
+- Git instalado
+```
+sudo apt-get install git
+```
 - Acesso a internet (acesso aos repositórios necessários da distribuição, Git Hub e Docker)
-- Clone desse repositório do Git (git clone https://github.com/dsebrian/ansible.git /pasta/escolhida)
+- Criar pasta para utilizar no teste
+```
+mkdir $HOME/pasta
+```
+- Clone desse repositório do Git
+```
+git clone https://github.com/dsebrian/ansible.git /pasta/escolhida
+```
 
 # Descrição das atividades
 No hospedeiro, executar o clone desse repositório do Git e executar apenas o playbook main.yml (comando para execução abaixo).
