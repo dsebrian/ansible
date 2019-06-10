@@ -28,8 +28,8 @@ sudo ansible-playbook -i IP_do_Docker, main.yml -v
 
 # Container
 A imagem gerada é baseada na goolang e está expondo a porta 8080, acessível em HTTPS.
-Essa imagem já acessa ao Git Hub, trazendo e disponibilizando ao container os arquivos necessários para sua configuração e execução.
-Para acesso do host, https://ipdocontainer:8080
+Essa imagem já acessa ao Git Hub, trazendo e disponibilizando ao container os arquivos necessários para sua configuração e execução.<br>
+URL para acesso do host: https://ipdocontainer:8080
 
 Dentro do container sempre é executada a aplicação compilada main.go, que chamei o aplicativo de mainexec.
 
