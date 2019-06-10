@@ -6,6 +6,11 @@
 ```
 sudo apt-get install ansible
 ```
+
+- Docker instalado:
+```
+sudo apt  install docker.io
+```
 - Git instalado
 ```
 sudo apt-get install git
