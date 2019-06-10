@@ -7,14 +7,6 @@
 sudo apt-get install ansible
 ```
 
-- Docker instalado (se for o mesmo host do Ansible):
-```
-sudo apt-get install docker.io
-```
-Para iniciar os serviços do docker
-```
-systemctl start docker
-```
 - Git instalado
 ```
 sudo apt-get install git
@@ -40,12 +32,12 @@ Esse Playbook main.yaml executa:
 - Valida se o container está ativo
 
 # Comando para execução do playbook:
-- Se o Docker estiver na mesmo host do Ansible, a interface local do docker terá o IP 172.17.0.1
+- Se o Docker estiver na mesmo host do Ansible, a interface local do docker (chamada docker0) terá por padrão o IP 172.17.0.1
 ```
 cd $HOME/nomedapasta/docker/docker_project
 sudo ansible-playbook --connection=local -i 172.17.0.1, main.yml -v
 ```
-- Se o Docker estiver em host diferente do Ansible
+- Se o Docker estiver em host diferente do Ansible, alterar o IP do servidor
 ```
 cd $HOME/nomedapasta/docker/docker_project
 sudo ansible-playbook -i IP_do_Servidor_Docker, main.yml -v
