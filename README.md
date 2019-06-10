@@ -1,14 +1,13 @@
 <h2> README para execução do exercício de publicação de aplicação go em um Container Docker </h2>
-#Premissas:
 
-# Hospedeiro
+# Hospedeiro utilizado
 - Ubuntu 18.04
 - Ansible instalado e configurado
 - Acesso a internet (acesso aos repositórios necessários da distribuição, Git Hub e Docker)
-
+- Clone desse repositório do Git.
 
 # Descrição das atividades
-No hospedeiro, executar apenas o playbook main.yml.
+No hospedeiro, executar o clone desse repositório do Git e executar apenas o playbook main.yml (comando para execução abaixo).
 Esse Playbook main.yaml executa:
 - Instalação do PIP e suas dependências
 - Instalação do Docker e suas dependências
