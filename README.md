@@ -36,7 +36,7 @@ Esse Playbook main.yaml executa:
 cd $HOME/nomedapasta/docker/docker_project
 sudo ansible-playbook --connection=local -i IP_do_Docker, main.yml -v
 ```
-- Se o Docker estiver em outro host do Ansible
+- Se o Docker estiver em host diferente do Ansible
 ```
 cd $HOME/nomedapasta/docker/docker_project
 sudo ansible-playbook -i IP_do_Docker, main.yml -v
