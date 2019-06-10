@@ -1,4 +1,4 @@
-<h2> README do exercício de publicação de aplicação go em container docker </h2>
+<h3> README para execução do exercício de publicação de aplicação go em um Container Docker </h3>
 #Premissas:
 
 # Hospedeiro
