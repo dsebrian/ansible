@@ -18,7 +18,9 @@ Esse Playbook main.yaml executa:
 
 # Comando para execução do playbook:
 ...
+
 sudo ansible-playbook --connection=local -i IP_do_Docker, main.yml -v
+
 ...
 
 # Container
