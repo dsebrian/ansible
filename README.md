@@ -11,6 +11,10 @@ sudo apt-get install ansible
 ```
 sudo apt-get install docker.io
 ```
+Para iniciar os serviços do docker
+```
+systemctl start docker
+```
 - Git instalado
 ```
 sudo apt-get install git
