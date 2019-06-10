@@ -2,8 +2,8 @@
 
 # Hospedeiro utilizado
 - Ubuntu 18.04
-- Ansible instalado e configurado
-- Git instalado
+- Ansible instalado (apt-get install ansible)
+- Git instalado (apt-get install git)
 - Acesso a internet (acesso aos repositórios necessários da distribuição, Git Hub e Docker)
 - Clone desse repositório do Git (git clone https://github.com/dsebrian/ansible.git /pasta/escolhida)
 
