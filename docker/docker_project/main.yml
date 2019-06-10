@@ -8,12 +8,16 @@
         #Instalação do PIP - Instalador
         - name: Install pip
           apt: name=python-pip state=present
+
+       #Instalação Docker  
+        - name: Install docker
+          apt: name=docker.io state=present
           
         #Instalação Docker-Compose  
         - name: Install docker-compose
           shell: pip install -U docker-compose
       
-      #Construir imagem do Docker através de um Dockerfile
+       #Construir imagem do Docker através de um Dockerfile
         - name: Build Docker image from Dockerfile
           docker_image:
             name: go_run
