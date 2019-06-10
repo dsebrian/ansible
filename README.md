@@ -9,7 +9,7 @@ sudo apt-get install ansible
 
 - Docker instalado:
 ```
-sudo apt  install docker.io
+sudo apt-get install docker.io
 ```
 - Git instalado
 ```
