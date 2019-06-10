@@ -1,13 +1,13 @@
 <h2> README do exercício de publicação de aplicação go em container docker </h2>
 #Premissas:
 
-#Hospedeiro
+# Hospedeiro
 - Ubuntu 18.04
 - Ansible
 - Acesso a internet (acesso ao repositório da dist, Git Hub e Docker)
 
 
-#Descrição das atividades
+# Descrição das atividades
 No hospedeiro, executar apenas o playbook main.yml.
 Esse Playbook main.yaml executa:
 - Instalação do PIP e suas dependências no hospedeiro
@@ -16,13 +16,17 @@ Esse Playbook main.yaml executa:
 - Executa o container
 - Valida se o container está ativo
 
-#comando para execução do playbook:
+# Comando para execução do playbook:
+...
 sudo ansible-playbook --connection=local -i IP_do_Docker, main.yml -v
+...
 
-#Container
+# Container
 A imagem gerada é baseada na goolang e está expondo a porta 8080, acessível em HTTPS.
 Essa imagem já acessa ao Git Hub, trazendo e disponibilizando ao container os arquivos necessários para sua configuração e execução.
 Para acesso do host, https://ipdocontainer:8080
+
+Dentro do container sempre é executada a aplicação compilada main.go, que chamei o aplicativo de mainexec.
 
 
 
