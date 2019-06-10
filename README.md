@@ -4,6 +4,7 @@
 # Hospedeiro
 - Ubuntu 18.04
 - Ansible instalado e configurado
+- Docker Instalado e configurado
 - Acesso a internet (acesso aos repositórios necessários da distribuição, Git Hub e Docker)
 
 
